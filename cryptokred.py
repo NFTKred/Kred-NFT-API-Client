@@ -64,8 +64,8 @@ class API(object):
         logging.debug('url %s' % url)
 
         # Make the request
-        logging.debug('CryptoKred request: method:%s url:%s headers:%s data:%s',
-                      method, url, headers, data)
+        logging.debug('CryptoKred request: method:%s url:%s headers:%s data:%s params:%s',
+                      method, url, headers, data, params)
 
 
         response = self._request(method=method, url=url, data=data, params=params, headers=headers)
@@ -81,7 +81,7 @@ class API(object):
                     if 'traceback' in data:
                         logging.error('Server traceback:\n%s', data['traceback'].strip())
                 except KeyError:
-                    logging.error('SocialOS error:\n%s', json.dumps(data, indent=2))
+                    logging.error('CryptoKred API error:\n%s', json.dumps(data, indent=2))
 
         except json.JSONDecodeError as exception:
             logging.error('json error:%s\nbad json:"%s"', exception, text)
