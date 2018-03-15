@@ -45,6 +45,7 @@ class API(object):
 
         if method == 'GET':
             params = data
+            data = None
         else:
             params = None
 
