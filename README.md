@@ -1,6 +1,6 @@
 # Python API
 
-Simple Python client library to manage access to the Kred NFT API
+Simple Python client library to manage access to the Coin.Kred NFT API.
 
 See http://docs.coin.kred for a full description of the API.
 
