@@ -1,8 +1,8 @@
-# CryptoKred
+# Python API
 
-Simple python client library to manage access to the Kred NFT API
+Simple Python client library to manage access to the Kred NFT API
 
-See http://docs.crypto.kred for a full description of the API.
+See http://docs.coin.kred for a full description of the API.
 
 Usage example for the client library:
 ```python
